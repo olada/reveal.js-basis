@@ -1,0 +1,13 @@
+{
+  "name": "reveal.js-basis",
+  "version": "0.0.1",
+  "scripts": {
+    "presentation": "gulp present"
+  },
+  "devDependencies": {
+    "gulp": "^3.9.1",
+    "gulp-clean": "^0.3.2",
+    "gulp-rename": "^1.2.2",
+    "gulp-run": "^1.7.1"
+  }
+}
