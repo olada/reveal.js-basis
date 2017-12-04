@@ -1,5 +1,7 @@
 # reveal.js-basis
-Serves as a basis if you want to create your own slides but don't want to always clone / fork the latest version of reveal.js
+Serves as a basis if you want to create your own slides but don't want 
+to always clone / fork the latest version of reveal.js.
+If you don't know what reveal.js is, check out [https://revealjs.com/#/]
 
 # Project Initialization
 
@@ -20,3 +22,17 @@ browser.
 Now you can edit the file `slides/slides.html`. Every time you save changes
 to the _slides.html_ file, you can refresh your browser and the changes will
 be loaded.
+
+# Updating reveal.js
+Updating the reveal.js part is as easy as running `git submodule update` in
+the root project folder.
+
+# How does the Gulp pipeline work?
+The npm runner of _reveal.js_ spawns a web server which serves the index.html
+inside of the reveal.js folder. Therefore, in essence, the goal of the pipeline 
+is to copy the file `./slides/slides.html` into the reveal.js folder and
+rename it to _index.html_, so it will be used by the webserver.
+This is done so you can have your slides file in a separate folder in
+your repository instead of forking the whole reveal.js repo. Also this is
+a workaround for the fact that you cannot modify a file of a 
+submodule which is managed by a foreign entity.
