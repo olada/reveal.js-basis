@@ -1,6 +1,5 @@
 # reveal.js-basis
-Serves as a basis if you want to create your own slides but don't want 
-to always clone / fork the latest version of reveal.js.
+Base project which offers a build pipeline for reveal.js presentations.
 If you don't know what reveal.js is, check out https://revealjs.com/#/
 
 # Project Initialization
@@ -36,3 +35,9 @@ This is done so you can have your slides file in a separate folder in
 your repository instead of forking the whole reveal.js repo. Also this is
 a workaround for the fact that you cannot modify a file of a 
 submodule which is managed by a foreign entity.
+
+# Why use reveal.js (and this basis project)?
+- Easy usage of distributed versioning control (since you only modify text files)
+- web-based (therefore brings all the perks of web-based systems like cross-platform, no special system requirements, etc..)
+- looks nice
+- because you can
